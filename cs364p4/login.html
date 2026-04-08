@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <script defer src = "login.js"> </script>
+    <script defer src="loadnavbar.js"> </script>
+    <script defer src="loginStatus.js"> </script>
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+    <nav class="navbar"> <div id="navbar-placeholder"> nav bar placeholder </div> </nav>
+    <img src="DaiLeak.png" alt="logo" width="200" height="150">
+    <h1>DaiLeak Login</h1> 
+    <form id="login-form" onsubmit="login(event)">
+      <fieldset>
+        <label for="user_field">Username:</label>
+        <input type="text" id="user_field" name="username" required>
+        <br>
+        <label for="password_field">Password:</label>
+        <input type="password" id="password_field" name="password" required>
+        <br>
+
+        <!--same here as register to main for now-->
+        <!--<button type="submit">Login</button>-->
+        <a href="DLmainPage.html" class="confirmButton">CONFIRM</a>
+
+        <br>
+        <br>
+        <p>New? Sign up!</p>
+        <a href="register.html">Register for DaiLeak</a>
+        <br>
+        <a href="forgotPassword.html">Forgot password?</a>
+      </fieldset>
+    </form>
+    
+
+    <hr>
+
+</body>
+</html>
+

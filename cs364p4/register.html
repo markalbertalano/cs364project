@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <script src="register.js"> </script>
+    <script defer src="loadnavbar.js"> </script>
+    <script defer src="loginStatus.js"> </script>
+    <link rel="stylesheet" href="website.css">
+</head>
+
+<body>
+      <nav class="navbar"> <div id="navbar-placeholder"> <p>
+        <a href="login.html">Login</a>
+      </p> </div> </nav>
+      <img src="DaiLeak.png" alt="logo" width="200" height="150">
+        <form id="register-form">
+      <fieldset>
+      <legend>Register for a DaiLeak account!</legend>
+        <label for="name">Username:</label>
+        <br>
+        <input type="text" id="name" name="username" required>
+        <p>Must be at least 5 characters long</p>
+        <p>Must be less than 32 characters long</p>
+        <br>
+        <br>
+
+        <label for="password">Password:</label>
+        <br>
+        <input type="password" id="password" name="password" required>
+        <p>Must be at least 12 characters long</p>
+        <p>Must have a symbol</p>
+        <p>Must have a number</p>
+        <br>
+        <br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <label for="role">Role:</label>
+        <select id="role" name="role" required>
+            <option value="user">User</option>
+            <option value="admin">Admin</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <label for="dateOfBirth">Date of Birth</label>
+        <br>
+        <input type="date" id="dateOfBirth" name="dateOfBirth" required>
+        <p>Must be 18 years or older</p>
+        <br>
+        <br>
+        
+        <label for="Recovery">Recovery Question:</label>
+        <select id="Recovery" name="Recovery" required>
+            <option value="q0">Select a question</option>            
+            <option value="q1">What was the name of your first pet?</option>
+            <option value="q2">What is your mothers maiden name?</option>
+            <option value="q3">Where did you go to high school?</option>
+        </select>
+        <br>
+
+        <label for="Answer">Answer:</label>
+        <input type="text" id="Answer" name="Answer" required>
+        <br>
+        <br>
+
+        <!--changed this to a href to link register to main page easier-->
+        <!--<button type="submit" onclick="window.location.href">Confirm</button>-->
+
+        <a href="DLmainPage.html" class="confirmButton">CONFIRM</a>
+        
+      </fieldset>
+    </form>
+    <hr>
+</body>
+</html>
+

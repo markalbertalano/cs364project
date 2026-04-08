@@ -1,0 +1,166 @@
+
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_template4*/
+* {
+
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.content {
+
+    background-color: #614a39;
+    padding: 10px;
+
+    /* claude suggested this line since page was not filling whole space*/
+    flex: 1;
+    clear: both;
+}
+
+/*https://www.w3schools.com/howto/howto_js_topnav.asp*/
+.topNav {
+
+    overflow: visible;
+    background-color: #739c69;
+    position: relative;
+}
+.topNav a {
+
+    float: right;
+    display: block;
+    color: #614a39;
+    text-align: center;
+    padding: 15px 15px;
+    text-decoration: none;
+}
+.topNav a:hover {
+
+    background-color: #213d57;
+    color: #739c69;
+}
+/*https://www.w3schools.com/css/css_dropdowns.asp*/
+.topNav a:not(.topNavTab) {
+
+    display: none;
+}
+.topNav.open a {
+
+    display: block;
+}
+.topNavTab {
+
+    display: block;
+    float: right;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #739c69;
+
+    /* claude suggested that these be included to fix my tab problem*/
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    color: #739c69;
+}
+
+
+.leftNav {
+
+    background-color: #739c69;
+    position: absolute;
+    width: 100px;
+    height: 100vh;
+
+    top: 0;
+    left: 0;
+}
+.leftNav a {
+
+    display: block;
+    color: #614a39;
+    padding: 15px 15px;
+}
+.leftNav a:hover {
+
+    background-color: #213d57;
+    color: #739c69;
+}
+.leftNav a:not(.leftNavTab) {
+    
+    display: none;
+}
+.leftNav.open a {
+
+    display: block;
+}
+/* claude suggesting adding another specifer to fix the not-showing issue*/
+.leftNav:not(.open){
+
+    width: 0;
+}
+.leftNavTab {
+
+    display: block;
+    float: right;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #739c69;
+
+    /* claude suggested that these be included to fix my tab problem*/
+    position: absolute;
+    left: 100%;
+    top: 10%;
+    color: #739c69;
+}
+
+
+/* claude tailored my logic already made into settings page logic*/
+.mainSettings {
+
+    background-color: #614a39;
+    flex: 1;
+    padding: 10px 10px;
+    color: #739c69;
+}
+.mainSettings h1 {
+
+    text-align: center;
+}
+.mainButton {
+
+    display: inline-block;
+    background-color: #739c69;
+    color: #614a39;
+    padding: 10px 15px;
+}
+.mainButton:hover {
+
+    background-color: #213d57;
+}
+.settingsButton {
+
+    display: block;
+    background-color: #739c69;
+    color: #614a39;
+    padding: 20px;
+    text-align: center;
+    margin: 15px auto;
+}
+.settingsButton:hover {
+
+    background-color: #213d57;
+    color: #739c69;
+}
+
+/*
+* NEED TO FIX ANIMATION SPEED!!
+* MAYBE ADD HOVER EFFECT THAT PULLS THE TAB OUT?
+* MAYBE ADD >/< SWITCHER LOGIC?
+*/

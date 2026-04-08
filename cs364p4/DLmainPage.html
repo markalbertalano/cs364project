@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MainPage</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--https://www.w3schools.com/html/html_css.asp-->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <div class="topNav" id="mainTopNav">
+
+            <!--this is very right button-->
+            <a href="#">DMs</a>
+            <a href="#">add post</a>
+            <a href="#">search bar</a>
+            <a href="#" class="topNavTab" onclick="document.getElementById('mainTopNav').classList.toggle('open')">^</a>
+        </div>
+        
+        <div class="leftNav" id="mainLeftNav">
+
+            <a href="#">my communities</a>
+            <a href="DLmainSettings.html">main settings</a>
+            <a href="#" class="leftNavTab" onclick="document.getElementById('mainLeftNav').classList.toggle('open')">&lt</a>
+        </div>
+
+        <div class="content"></div>
+    </body>
+</html>
